@@ -1,0 +1,31 @@
+.cm-main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .cm-main {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .cm-main {
+    display: grid;
+    align-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+  }
+
+  .cm-card:first-child,
+  .cm-card:last-child {
+    grid-row: 1 / 3;
+  }
+  .cm-card:nth-child(4) {
+    grid-column: 3 / 4;
+  }
+}

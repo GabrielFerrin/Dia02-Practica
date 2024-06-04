@@ -1,0 +1,17 @@
+.cm-hdr {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: .5rem;
+}
+
+.cm-hdr h2:first-child {
+  font-weight: 400;
+}
+
+.cm-hdr p {
+  margin-top: .4rem;
+  color: var(--text-02);
+}
